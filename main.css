@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@100&family=Readex+Pro:wght@160;400&family=Spline+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 9rem auto;
+  width: 70%;
+  font-family: "Epilogue", sans-serif;
+  font-family: "Readex Pro", sans-serif;
+  font-family: "Spline Sans", sans-serif;
+  z-index: 3;
+  background: #af67e9;
+  position: relative;
+}
+
+.main-section {
+  position: relative;
+  background-color: #e7e7e9;
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 0;
+  height: 35rem;
+}
+
+.main-section_image-1 {
+  position: relative;
+  top: 2rem;
+  right: 0rem;
+  min-width: 99%;
+  -o-object-position: -85px;
+     object-position: -85px;
+  z-index: 1;
+}
+
+.main-section_image-2 {
+  position: absolute;
+  bottom: 13.6rem;
+  left: -5.3rem;
+  max-width: 30%;
+  max-height: auto;
+  z-index: 1;
+}
+
+.main-section_image-3 {
+  max-height: 840px;
+  max-width: 840px;
+  position: absolute;
+  left: 0;
+  top: 0rem;
+  -o-object-position: -460px -260px;
+     object-position: -460px -260px;
+}
+
+.main-section_image_mobile-img, .main-section_image_mobile2-img {
+  display: none;
+}
+
+.main-section_faq {
+  margin: 2.5rem 0rem 4rem auto;
+  position: absolute;
+  left: 35rem;
+}
+
+.main-section_faq-head {
+  font-size: 2rem;
+  font-weight: 900;
+  -webkit-margin-after: 2.5rem;
+          margin-block-end: 2.5rem;
+}
+
+.main-section_faq hr {
+  max-width: 22rem;
+  margin-bottom: 2rem;
+}
+
+.main-section_list {
+  max-width: 100%;
+}
+
+.main-section_list_q {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.main-section_list_q .box {
+  padding: 0;
+}
+
+.main-section_list_q .showing {
+  -webkit-margin-end: -4rem;
+          margin-inline-end: -4rem;
+  -webkit-margin-after: 0.5rem;
+          margin-block-end: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.main-section_list_q .showing:hover {
+  color: #f47c57;
+  cursor: pointer;
+}
+
+.main-section_list_q .hidden {
+  display: none;
+  -webkit-margin-before: 5px;
+          margin-block-start: 5px;
+  color: #787887;
+  font-size: 14px;
+  max-width: 450px;
+  padding: 0.2rem 0;
+}
+
+.main-section_list_q img {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  position: relative;
+  right: -5.5rem;
+}
+
+.main-section_list_q img:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 868px) {
+  body {
+    width: 90%;
+    margin: 12rem auto 2rem auto;
+  }
+  .main-section {
+    height: 80vh;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-section_image {
+    position: relative;
+  }
+  .main-section_image-1, .main-section_image-2, .main-section_image-3 {
+    display: none;
+  }
+  .main-section_image_mobile-img {
+    display: block;
+    position: absolute;
+    top: -12.2rem;
+    left: 10.5rem;
+    max-width: 54%;
+  }
+  .main-section_image_mobile2-img {
+    display: block;
+    width: 54%;
+    position: absolute;
+    left: 10.5rem;
+    top: -2.4rem;
+  }
+  .main-section_faq {
+    position: static;
+    width: 95%;
+  }
+  .main-section_faq-head {
+    margin: 7rem 1rem 2rem 19rem;
+    font-size: 2.5rem;
+  }
+  .main-section_faq hr {
+    max-width: 82%;
+    margin-inline: 2.6rem;
+  }
+  .main-section_list_q {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .main-section_list_q .showing {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    -webkit-margin-start: 3rem;
+            margin-inline-start: 3rem;
+  }
+  .main-section_list_q .hidden {
+    width: 90%;
+    position: relative;
+    left: 3rem;
+    -webkit-padding-before: 4px;
+            padding-block-start: 4px;
+    font-size: 15px;
+  }
+  .main-section_list .box {
+    -webkit-margin-after: 0.7rem;
+            margin-block-end: 0.7rem;
+  }
+  .main-section_list img {
+    right: 5rem;
+    top: 2px;
+  }
+}
+
+@media only screen and (max-width: 668px) {
+  body {
+    width: 90%;
+    margin: 12rem auto 2rem auto;
+  }
+  .main-section {
+    height: 80vh;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-section_image {
+    position: relative;
+  }
+  .main-section_image-1, .main-section_image-2, .main-section_image-3 {
+    display: none;
+  }
+  .main-section_image_mobile-img {
+    display: block;
+    position: absolute;
+    top: -9.2rem;
+    left: 8rem;
+    max-width: 55%;
+  }
+  .main-section_image_mobile2-img {
+    display: block;
+    width: 55%;
+    position: absolute;
+    left: 8rem;
+    top: -1rem;
+  }
+  .main-section_faq {
+    position: static;
+    width: 550px;
+    margin: rem auto;
+  }
+  .main-section_faq-head {
+    margin: 6rem 1rem 2rem 13rem;
+    font-size: 2.5rem;
+  }
+  .main-section_faq hr {
+    max-width: 78%;
+    margin-inline: 2.6rem;
+  }
+  .main-section_list_q {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .main-section_list_q .showing {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    -webkit-margin-start: 3rem;
+            margin-inline-start: 3rem;
+  }
+  .main-section_list_q .hidden {
+    width: 90%;
+    position: relative;
+    left: 3rem;
+    -webkit-padding-before: 4px;
+            padding-block-start: 4px;
+  }
+  .main-section_list .box {
+    -webkit-margin-after: 1rem;
+            margin-block-end: 1rem;
+  }
+  .main-section_list img {
+    right: 5rem;
+    top: 2px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
